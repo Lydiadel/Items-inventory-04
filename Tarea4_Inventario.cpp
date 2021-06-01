@@ -10,6 +10,10 @@
 #include "Hechicera.h" 
 #include "Vikingo.h"
 #include "Arquero.h"
+#include "Items.h"
+#include "ItemGema.h"
+#include "ItemPotion.h"
+
 using namespace std;
 #include <vector>
 

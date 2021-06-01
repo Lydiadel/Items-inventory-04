@@ -2,14 +2,14 @@
 //TC1030 Grupo 700
 //24 de mayo del 2021
 
-#ifndef Objetos_h
-#define Objetos_h
+#ifndef Items_h
+#define Items_h
 
-class Objetos {
+class Items{
 
     public:
-        Objetos();
-        Objetos(int, string, string, int);
+        Items();
+        Items(int, string, string, int);
         virtual void use(); //virtual solo en declaracion - Función polimórfica
         int getLvl(){return level;};
         string getName(){return name;};
@@ -20,21 +20,21 @@ class Objetos {
         string name; 
         string description;
         int HP;
-        vector <Objetos*> vecObjetos;
+        vector <Items*> vecObjetos;
 };
-Objetos::Objetos(){
+Items::Items(){
     level=0; 
     name=""; 
     description="";
     HP=1000;
 }
-Objetos::Objetos(int lvl, string n, string descr, int healthp){
+Items::Items(int lvl, string n, string descr, int healthp){
     level= lvl;
     name= n;
-    description: descr;
+    description= descr;
     HP= healthp;
 }
-void Objetos::use(){
+void Items::use(){
     cout<<"Ese USE no se debe llamar de la clase base"<<endl;
 }
 

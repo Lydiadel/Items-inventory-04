@@ -5,8 +5,8 @@
 #ifndef Inventario_h
 #define Inventario_h
 
-#include "Objetos.h"
-#include "itemGema.h"
+#include "Items.h"
+#include "ItemGema.h"
 #include "ItemPotion.h" 
 #include <vector>
 
@@ -24,7 +24,7 @@ class Inventario {
     protected:
         int x;
         int y;
-        vector <Objetos*> vecItems;     
+        vector <Items*> vecItems;     
 };
 Inventario::Inventario(){
     x=0;
@@ -39,13 +39,13 @@ void Inventario::draw(){
 }
 
 void Inventario::addItemGem(){
-    Objetos *objItems;  
+    Items *objItems;  
     objItems = new Gema();
     vecItems.push_back(objItems);
 }
 
 void Inventario::addItemPotion(){
-    Objetos *objItems;  
+    Items *objItems;  
     objItems = new Potion();
     vecItems.push_back(objItems);
 }

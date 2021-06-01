@@ -2,9 +2,9 @@
 //TC1030 Grupo 700
 //24 de mayo del 2021
 
-#include "Objetos.h"
+#include "Items.h"
 
-class Gema: public Objetos{
+class Gema: public Items{
     public:
         Gema();
         Gema(int,int,string, string, int);
@@ -15,10 +15,10 @@ class Gema: public Objetos{
         int gemType;
          //{Diamond, Ruby, Emerald, Sapphire};
 }; 
-Gema::Gema() : Objetos(){
+Gema::Gema() : Items(){
     gemType= 0;    
 }
-Gema::Gema(int gemt, int lvl, string n, string descr, int healthp):Objetos(lvl, n, descr, healthp){
+Gema::Gema(int gemt, int lvl, string n, string descr, int healthp):Items(lvl, n, descr, healthp){
     gemType = gemt;
 
 }
