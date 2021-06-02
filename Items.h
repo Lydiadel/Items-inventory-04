@@ -4,6 +4,7 @@
 
 #ifndef Items_h
 #define Items_h
+using namespace std;
 
 class Items{
 
@@ -20,7 +21,7 @@ class Items{
         string name; 
         string description;
         int HP;
-        vector <Items*> vecObjetos;
+        
 };
 Items::Items(){
     level=0; 

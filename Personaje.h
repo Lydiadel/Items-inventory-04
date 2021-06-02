@@ -8,7 +8,10 @@
 
 #ifndef Personaje_h
 #define Personaje_h
+#include "ItemGema.h"
+#include "ItemPotion.h"
 using namespace std;
+#include <vector>
 
 class Personaje{
     public:
@@ -22,11 +25,16 @@ class Personaje{
         virtual void correr();
         virtual void saltar();
         virtual void imprime();
+        void AdicionaGema();
+        void AdicionaPotion();
+        void showInventario();
 
     protected:
-        string Nombre; 
+        string Nombre;   
         int HP;
-};
+        vector <Items*> vecItems;  
+}; 
+
 
 Personaje::Personaje(){
     Nombre= "-";
@@ -72,6 +80,26 @@ void Personaje::shoot(){
 void Personaje::imprime(){
     cout << "Personaje" << endl << "Nombre: " << Nombre << endl;
     cout << "Nivel: " << HP << endl;
+}
+
+void Personaje::AdicionaGema(){
+    Items *objetoitem;
+
+    objetoitem= new Gema();
+    vecItems.push_back(objetoitem);
+}
+
+void Personaje::AdicionaPotion(){
+    Items *objetoitem;
+
+    objetoitem= new Potion();
+    vecItems.push_back(objetoitem);
+}
+
+void Personaje::showInventario(){
+    for (int i=0; i<vecItems.size(); i++){
+        vecItems[i]->use();
+    }
 }
 #endif /* Personaje_h */
 
