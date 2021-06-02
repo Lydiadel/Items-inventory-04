@@ -1,8 +1,8 @@
 //
-//  Genius.h
-//  Tarea 01 herencia
+//  Arquero.h
+//  Tarea 04 
 //
-//  Created by Lydia Delgado uriarte & Hugo Edgar Palomares Estrella on 23/05/21.
+//  Created by Lydia Delgado uriarte & Hugo Edgar Palomares Estrella on 01/06/21.
 //
 
 #ifndef Arquero_h
