@@ -1,6 +1,9 @@
-// Lydia Delgado Uriarte
-//TC1030 Grupo 700
-//24 de mayo del 2021
+//
+//  Inventario.h
+//  Tarea 04 
+//
+//  Created by Lydia Delgado uriarte & Hugo Edgar Palomares Estrella on 01/06/21.
+//
 
 #ifndef Inventario_h
 #define Inventario_h

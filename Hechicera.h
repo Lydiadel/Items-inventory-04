@@ -1,6 +1,6 @@
 //
 //  Hechicera.h
-//  Tarea 03 herencia
+//  Tarea 04 
 //
 //  Created by Lydia Delgado uriarte & Hugo Edgar Palomares Estrella on 29/05/21.
 //

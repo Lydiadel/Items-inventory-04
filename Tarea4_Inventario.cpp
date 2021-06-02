@@ -1,8 +1,8 @@
 //
 //  main.cpp
-//  SituacionProblema
-//
-//  Created by Lydia Delgado Uriarte & Hugo Edgar Palomares Estrella on 14/05/21.
+//  Tarea 04
+//  Profesor: Abraham N. Aldaco-Gastélum
+//  Created by Lydia Delgado Uriarte & Hugo Edgar Palomares Estrella on 01/06/21.
 //
 
 #include <iostream>
